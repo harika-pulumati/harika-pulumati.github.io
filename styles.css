@@ -72,3 +72,9 @@ footer{border-top:1px solid var(--line);padding:18px 5.5%;display:flex;justify-c
 /* Hard size cap: the visitor should be no larger than a lowercase letter. */
 .brand svg.masthead-cat{display:block!important;position:absolute!important;width:.42em!important;height:.38em!important;max-width:.42em!important;max-height:.38em!important;min-width:0!important;min-height:0!important;left:50%!important;bottom:.58em!important;overflow:visible!important;opacity:0;transform:translate(-50%,8px) scale(.9);pointer-events:none;z-index:5}
 .cat-host.is-peeking svg.masthead-cat{opacity:1;transform:translate(-50%,-1px) scale(1)}
+
+/* Cat is a little head peeking over the letter, never covering its main shape. */
+.brand .cat-host{position:relative;display:inline-block}
+.brand svg.masthead-cat{display:block!important;position:absolute!important;z-index:5!important;width:.34em!important;height:.32em!important;max-width:.34em!important;max-height:.32em!important;min-width:0!important;min-height:0!important;left:72%!important;top:-.30em!important;bottom:auto!important;overflow:visible!important;opacity:0;pointer-events:none;transform:translate(-50%,5px) rotate(-7deg) scale(.9);transform-origin:50% 100%;transition:opacity .18s ease,transform .24s ease}
+.brand .cat-host.is-peeking svg.masthead-cat{opacity:1;transform:translate(-50%,-1px) rotate(-7deg) scale(1)}
+@media(prefers-reduced-motion:reduce){.brand svg.masthead-cat{transition:none}.brand .cat-host.is-peeking svg.masthead-cat{transform:translate(-50%,0) rotate(-7deg) scale(1)}}
