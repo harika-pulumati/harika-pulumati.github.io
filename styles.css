@@ -106,3 +106,12 @@ body{
  body{background-size:240px 240px,360px 300px,24px 24px,24px 24px;background-attachment:scroll}
  .intro,.section,.about{background-color:rgba(244,240,232,.86)}
 }
+
+/* Editorial refinement: return to quiet paper and deepen ink, without increasing weight. */
+:root{--ink:#20211e;--muted:#65645d}
+body{background-color:#f4f0e8;background-image:none!important;color:#20211e}
+.intro,.section,.about{background-color:transparent!important}
+.method{background-color:#e9e3d8;background-image:none!important}
+.feature-art,.note-card{background-color:#e6dfd2}
+.intro-copy,.section-lead,.feature-copy p:not(.eyebrow),.note-card p:not(.eyebrow),.about>div:nth-child(2),.article p,.article li{color:#42423c}
+.index,.topline{color:#65645d}
