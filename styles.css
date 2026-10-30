@@ -77,3 +77,32 @@ body{
   background-repeat:no-repeat;
 }
 @media(max-width:760px){body{background-size:420px 360px}.method{background-size:auto,300px auto}}
+
+/* More legible notebook-paper treatment: visible at the edges, quiet beneath text. */
+body{
+ background-color:#f4f0e8;
+ background-image:
+  radial-gradient(circle at 8% 12%, transparent 0 42px, rgba(115,108,94,.13) 43px 44px, transparent 45px 58px, rgba(115,108,94,.10) 59px 60px, transparent 61px),
+  linear-gradient(32deg, transparent 49.7%, rgba(115,108,94,.10) 49.9%, rgba(115,108,94,.10) 50.1%, transparent 50.3%),
+  linear-gradient(90deg, rgba(115,108,94,.045) 1px, transparent 1px),
+  linear-gradient(rgba(115,108,94,.045) 1px, transparent 1px);
+ background-size:300px 300px,520px 420px,28px 28px,28px 28px;
+ background-position:left top, right 90px, center center, center center;
+ background-attachment:fixed;
+}
+.topline,.masthead,.intro,.section,.method,.closing,.about,footer{position:relative}
+.intro,.section,.about{background-color:rgba(244,240,232,.74)}
+.feature-art,.note-card{background-color:rgba(230,223,210,.88)}
+.method{
+ background-color:rgba(233,227,216,.94);
+ background-image:
+  radial-gradient(circle at 88% 55%, transparent 0 58px, rgba(115,108,94,.17) 59px 60px, transparent 61px 76px, rgba(115,108,94,.12) 77px 78px, transparent 79px),
+  linear-gradient(135deg,transparent 49.8%,rgba(115,108,94,.12) 50%,transparent 50.2%);
+ background-size:260px 260px,300px 220px;
+ background-position:right center,left center;
+ background-repeat:no-repeat;
+}
+@media(max-width:760px){
+ body{background-size:240px 240px,360px 300px,24px 24px,24px 24px;background-attachment:scroll}
+ .intro,.section,.about{background-color:rgba(244,240,232,.86)}
+}
