@@ -61,3 +61,19 @@ footer{border-top:1px solid var(--line);padding:18px 5.5%;display:flex;justify-c
 .article blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:5px 22px;font:italic 23px/1.35 var(--serif);color:#4d4d44}
 .article a{color:var(--accent)}.article .sources{font-size:12px}.article .callout{background:#e9e3d8;padding:17px 20px;margin:24px 0;font-size:13px}
 @media(max-width:760px){.topline span:last-child{display:none}.masthead{align-items:flex-start;flex-direction:column;gap:18px;padding:22px 7%}.brand{font-size:38px;max-width:100%}nav{justify-content:flex-start;gap:15px 22px}.intro{padding:45px 8% 38px}.intro h1{font-size:clamp(44px,10vw,65px)}.section{padding:36px 8% 44px}.section-heading{align-items:flex-start;gap:10px;flex-direction:column}.feature,.method,.about{grid-template-columns:1fr;gap:24px}.feature-art{min-height:230px}.method,.about{padding:42px 8%}.cards{grid-template-columns:1fr}.note-card{min-height:0}.closing{padding:40px 8%}footer{gap:12px;flex-wrap:wrap}.footer-brand{width:100%}.article{padding:38px 22px 55px}}
+
+/* Notebook-paper watermark: faint technical sketches behind the editorial layout. */
+body{
+  background-color:var(--paper);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='480' viewBox='0 0 560 480'%3E%3Cg fill='none' stroke='%238d877b' stroke-width='1' opacity='.17'%3E%3Cpath d='M24 58h88m-44-44v88M24 14l88 88M112 14 24 102'/%3E%3Ccircle cx='68' cy='58' r='28'/%3E%3Ccircle cx='68' cy='58' r='3'/%3E%3Cpath d='M360 28h146M388 16v24m-14-12h28M430 28v74m-9-9 9 9 9-9M360 102h146'/%3E%3Cpath d='M386 102c22-30 45-30 67 0s45 30 67 0' stroke-dasharray='3 5'/%3E%3Ccircle cx='470' cy='322' r='49'/%3E%3Ccircle cx='470' cy='322' r='35'/%3E%3Cpath d='M470 262v120M410 322h120M428 280l84 84m0-84-84 84'/%3E%3Cpath d='M36 350h132m-132 12h84m-84 12h112M36 338l16-16 16 16'/%3E%3Cpath d='M242 222c26-24 52-24 78 0m-39-39v78m-39-39h78'/%3E%3Cpath d='M242 222l-9-9m9 9-9 9m78-9 9-9m-9 9 9 9'/%3E%3Cpath d='M218 410l48-30 48 30-48 30zM266 380v60m-48-30h96'/%3E%3C/g%3E%3Cg fill='%238d877b' opacity='.16' font-family='monospace' font-size='8'%3E%3Ctext x='28' y='126'%3EFIG. 01 / OBSERVATION%3C/text%3E%3Ctext x='355' y='122'%3EAXIS / SCALE%3C/text%3E%3Ctext x='26' y='405'%3EANNOTATION%3C/text%3E%3Ctext x='404' y='400'%3E01:1.6%3C/text%3E%3C/g%3E%3C/svg%3E");
+  background-repeat:repeat;
+  background-size:560px 480px;
+}
+.method{
+  background-color:rgba(233,227,216,.88);
+  background-image:linear-gradient(rgba(233,227,216,.80),rgba(233,227,216,.80)),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='260' viewBox='0 0 420 260'%3E%3Cg fill='none' stroke='%238d877b' stroke-width='1' opacity='.22'%3E%3Ccircle cx='330' cy='130' r='76'/%3E%3Ccircle cx='330' cy='130' r='58'/%3E%3Cpath d='M330 38v184M238 130h184M265 65l130 130m0-130L265 195M20 40h105v72H20zM20 76h105M72 40v72M20 155h120m-120 12h84m-84 12h106'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:auto,420px 260px;
+  background-position:center, right center;
+  background-repeat:no-repeat;
+}
+@media(max-width:760px){body{background-size:420px 360px}.method{background-size:auto,300px auto}}
