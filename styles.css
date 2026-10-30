@@ -12,7 +12,7 @@ nav a:hover,.text-link:hover,.article a:hover{color:var(--accent)}
 .intro h1{font:600 clamp(48px,6.3vw,82px)/.98 var(--serif);letter-spacing:-.055em;margin:0 0 17px}
 .intro-copy{max-width:700px;font-size:18px;line-height:1.5;color:#56574f;margin-bottom:16px}
 .intro-note{margin:0;font:11px var(--mono);color:var(--muted)}
-.section{padding:42px 6.5% 54px;border-top:1px solid var(--line)}
+.section{padding:42px clamp(24px,3vw,48px) 54px;border-top:1px solid var(--line)}
 .section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px}
 .section h2,.method h2,.about h2{font:500 clamp(30px,3.4vw,43px)/1.08 var(--serif);letter-spacing:-.035em;margin:0}
 .index{font:10px var(--mono);color:var(--muted)}
@@ -29,7 +29,7 @@ nav a:hover,.text-link:hover,.article a:hover{color:var(--accent)}
 .feature-copy p:not(.eyebrow){font-size:14px;color:#626258;margin-bottom:12px}
 .feature-copy .dek{font:italic 18px/1.35 var(--serif);color:#45463f}
 .text-link{display:inline-block;margin-top:8px;padding-bottom:3px;border-bottom:1px solid var(--accent);font:11px var(--mono);color:var(--ink);text-decoration:none}
-.method{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%;padding:48px 10%;background:#e9e3d8}
+.method{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,68px);padding:48px clamp(24px,3vw,48px);background:#e9e3d8;width:100%;align-items:start}.method>div{min-width:0}.method>div:nth-child(2){max-width:720px}
 .method li{padding:8px 0;border-bottom:1px solid #cec6b8;font-size:12px}
 .method ol{list-style:none;padding:0;margin:18px 0 0;border-top:1px solid #cec6b8}
 .method li b{font:9px var(--mono);color:var(--accent);margin-right:15px}
