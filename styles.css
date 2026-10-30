@@ -172,3 +172,23 @@ body{
 @media(max-width:760px){
   body{background-size:420px 360px;background-attachment:scroll}
 }
+
+
+/* Notebook texture — built entirely from CSS gradients, no image assets. */
+html body{
+  background-color:#f4f0e8 !important;
+  background-image:
+    radial-gradient(circle at 52px 52px, transparent 0 30px, rgba(105,99,87,.20) 31px 32px, transparent 33px 47px, rgba(105,99,87,.13) 48px 49px, transparent 50px),
+    linear-gradient(rgba(105,99,87,.075) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(105,99,87,.075) 1px, transparent 1px),
+    linear-gradient(35deg, transparent 49.7%, rgba(105,99,87,.10) 49.9%, rgba(105,99,87,.10) 50.1%, transparent 50.3%);
+  background-size:280px 280px,28px 28px,28px 28px,460px 360px;
+  background-position:0 0,0 0,0 0, right top;
+  background-attachment:fixed;
+}
+@media(max-width:760px){
+  html body{
+    background-size:220px 220px,24px 24px,24px 24px,360px 300px;
+    background-attachment:scroll;
+  }
+}
