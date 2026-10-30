@@ -158,3 +158,17 @@ body{
 @media(max-width:760px){
   .about{padding-left:8%;padding-right:8%;grid-template-columns:1fr;gap:24px}
 }
+
+
+/* Bring back the original hand-drawn research-notebook motifs, visibly but softly. */
+body{
+  background-color:#f4f0e8 !important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='480' viewBox='0 0 560 480'%3E%3Cg fill='none' stroke='%237c766b' stroke-width='1.2' opacity='.28'%3E%3Cpath d='M24 58h88m-44-44v88M24 14l88 88M112 14 24 102'/%3E%3Ccircle cx='68' cy='58' r='28'/%3E%3Ccircle cx='68' cy='58' r='3'/%3E%3Cpath d='M360 28h146M388 16v24m-14-12h28M430 28v74m-9-9 9 9 9-9M360 102h146'/%3E%3Cpath d='M386 102c22-30 45-30 67 0s45 30 67 0' stroke-dasharray='3 5'/%3E%3Ccircle cx='470' cy='322' r='49'/%3E%3Ccircle cx='470' cy='322' r='35'/%3E%3Cpath d='M470 262v120M410 322h120M428 280l84 84m0-84-84 84'/%3E%3Cpath d='M36 350h132m-132 12h84m-84 12h112M36 338l16-16 16 16'/%3E%3Cpath d='M242 222c26-24 52-24 78 0m-39-39v78m-39-39h78'/%3E%3Cpath d='M242 222l-9-9m9 9-9 9m78-9 9-9m-9 9 9 9'/%3E%3Cpath d='M218 410l48-30 48 30-48 30zM266 380v60m-48-30h96'/%3E%3C/g%3E%3Cg fill='%237c766b' opacity='.30' font-family='monospace' font-size='8'%3E%3Ctext x='28' y='126'%3EFIG. 01 / OBSERVATION%3C/text%3E%3Ctext x='355' y='122'%3EAXIS / SCALE%3C/text%3E%3Ctext x='26' y='405'%3EANNOTATION%3C/text%3E%3Ctext x='404' y='400'%3E01:1.6%3C/text%3E%3C/g%3E%3C/svg%3E");
+  background-repeat:repeat;
+  background-size:560px 480px;
+  background-position:0 0;
+  background-attachment:fixed;
+}
+@media(max-width:760px){
+  body{background-size:420px 360px;background-attachment:scroll}
+}
