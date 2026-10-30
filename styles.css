@@ -61,3 +61,10 @@ footer{border-top:1px solid var(--line);padding:18px 5.5%;display:flex;justify-c
 .article blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:5px 22px;font:italic 23px/1.35 var(--serif);color:#4d4d44}
 .article a{color:var(--accent)}.article .sources{font-size:12px}.article .callout{background:#e9e3d8;padding:17px 20px;margin:24px 0;font-size:13px}
 @media(max-width:760px){.topline span:last-child{display:none}.masthead{align-items:flex-start;flex-direction:column;gap:18px;padding:22px 7%}.brand{font-size:38px;max-width:100%}nav{justify-content:flex-start;gap:15px 22px}.intro{padding:45px 8% 38px}.intro h1{font-size:clamp(44px,10vw,65px)}.section{padding:36px 8% 44px}.section-heading{align-items:flex-start;gap:10px;flex-direction:column}.feature,.method,.about{grid-template-columns:1fr;gap:24px}.feature-art{min-height:230px}.method,.about{padding:42px 8%}.cards{grid-template-columns:1fr}.note-card{min-height:0}.closing{padding:40px 8%}footer{gap:12px;flex-wrap:wrap}.footer-brand{width:100%}.article{padding:38px 22px 55px}}
+
+/* A tiny visitor in the masthead: subtle, occasional, and never in the way. */
+.brand{position:relative}
+.cat-host{position:relative;display:inline-block}
+.masthead-cat{position:absolute;z-index:3;left:50%;bottom:.58em;width:.48em;height:auto;opacity:0;pointer-events:none;transform:translate(-50%,9px) scale(.78);transform-origin:50% 100%;transition:opacity .22s ease,transform .28s cubic-bezier(.2,.75,.25,1)}
+.cat-host.is-peeking .masthead-cat{opacity:1;transform:translate(-50%,-1px) scale(1)}
+@media(prefers-reduced-motion:reduce){.masthead-cat{transition:none}.cat-host.is-peeking .masthead-cat{transform:translate(-50%,0) scale(1)}}
