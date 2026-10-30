@@ -128,3 +128,33 @@ body{background-color:#f4f0e8;background-image:none!important;color:#20211e}
 @media(max-width:760px){
   .about{padding-left:8%;padding-right:8%;grid-template-columns:1fr;gap:24px}
 }
+
+
+/* Restore a very restrained notebook-paper backdrop. */
+body{
+  background-color:#f4f0e8;
+  background-image:
+    radial-gradient(circle at 12% 18%, transparent 0 34px, rgba(115,108,94,.10) 35px 36px, transparent 37px 52px, rgba(115,108,94,.07) 53px 54px, transparent 55px),
+    linear-gradient(90deg, rgba(115,108,94,.035) 1px, transparent 1px),
+    linear-gradient(rgba(115,108,94,.035) 1px, transparent 1px);
+  background-size:280px 280px,32px 32px,32px 32px;
+  background-position:left 30px top 20px,center center,center center;
+  background-attachment:fixed;
+}
+@media(max-width:760px){
+  body{background-size:220px 220px,26px 26px,26px 26px;background-attachment:scroll}
+}
+
+/* Match About's horizontal gutter to the sections above it. */
+.about{
+  padding-left:clamp(24px,3vw,48px);
+  padding-right:clamp(24px,3vw,48px);
+  grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  gap:clamp(28px,5vw,68px);
+  align-items:start;
+}
+.about>div{min-width:0}
+.about>div:nth-child(2){max-width:720px}
+@media(max-width:760px){
+  .about{padding-left:8%;padding-right:8%;grid-template-columns:1fr;gap:24px}
+}
